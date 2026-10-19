@@ -172,9 +172,7 @@
           <p data-i18n="about_p2"></p>
         </div>
         <div class="stats">
-          <div class="card stat"><strong>[10+]</strong><span data-i18n="stat_years"></span></div>
-          <div class="card stat"><strong>[200+]</strong><span data-i18n="stat_clients"></span></div>
-          <div class="card stat"><strong>[50+]</strong><span data-i18n="stat_projects"></span></div>
+          <div class="card stat"><strong data-i18n="area_v"></strong><span data-i18n="area_l"></span></div>
           <div class="card stat"><strong>[3]</strong><span data-i18n="stat_langs"></span></div>
         </div>
       </div>
@@ -201,21 +199,8 @@
       <h2 data-i18n="exp_title"></h2>
       <ul class="timeline">
         <li><span class="year">[2020 — ]</span><div><h3 data-i18n="e1_t"></h3><p data-i18n="e1_d"></p></div></li>
-        <li><span class="year">[2015 — 2020]</span><div><h3 data-i18n="e2_t"></h3><p data-i18n="e2_d"></p></div></li>
-        <li><span class="year">[2011 — 2015]</span><div><h3 data-i18n="e3_t"></h3><p data-i18n="e3_d"></p></div></li>
+        <li><span class="year">[—]</span><div><h3 data-i18n="e2_t"></h3><p data-i18n="e2_d"></p></div></li>
       </ul>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section>
-    <div class="wrap">
-      <p class="eyebrow" data-i18n="rev_eyebrow"></p>
-      <h2 data-i18n="rev_title"></h2>
-      <div class="grid">
-        <div class="card"><blockquote><p data-i18n="r1"></p><footer data-i18n="r_author"></footer></blockquote></div>
-        <div class="card"><blockquote><p data-i18n="r2"></p><footer data-i18n="r_author"></footer></blockquote></div>
-      </div>
     </div>
   </section>
 
@@ -242,73 +227,64 @@
   // Text in [square brackets] is placeholder — replace with real content.
   const T = {
     he: {
-      nav_about: "אודות", nav_services: "שירותים", nav_experience: "ניסיון", nav_contact: "צור קשר",
-      hero_role: "[תחום המומחיות]",
+      nav_about: "אודות", nav_services: "שירותים", nav_experience: "הסמכות", nav_contact: "צור קשר",
+      hero_role: "שמירה ואבטחה · מרכז הארץ וטיולים",
       hero_title: "דניס קיגלמן",
-      hero_lead: "[משפט אחד: במה אני עוזר ולמי. לדוגמה — עוזר לעסקים קטנים לפתור X ולהשיג Y.]",
-      cta_contact: "לתיאום פגישה", cta_services: "השירותים שלי", cta_call: "התקשרו",
-      about_title: "[כותרת קצרה על הגישה שלי]",
-      about_p1: "[פסקה 1: מי אני, ניסיון ותחום התמחות.]",
-      about_p2: "[פסקה 2: איך אני עובד ומה מייחד אותי.]",
-      stat_years: "שנות ניסיון", stat_clients: "לקוחות", stat_projects: "פרויקטים", stat_langs: "שפות עבודה",
-      services_title: "[במה אני יכול לעזור]",
-      s1_t: "[שירות 1]", s1_d: "[תיאור קצר של השירות והתוצאה ללקוח.]",
-      s2_t: "[שירות 2]", s2_d: "[תיאור קצר של השירות והתוצאה ללקוח.]",
-      s3_t: "[שירות 3]", s3_d: "[תיאור קצר של השירות והתוצאה ללקוח.]",
-      exp_title: "[הדרך המקצועית]",
-      e1_t: "[תפקיד · חברה]", e1_d: "[הישגים עיקריים.]",
-      e2_t: "[תפקיד · חברה]", e2_d: "[הישגים עיקריים.]",
-      e3_t: "[השכלה · מוסד]", e3_d: "[תואר / הסמכה.]",
-      rev_eyebrow: "המלצות", rev_title: "מה אומרים לקוחות",
-      r1: "[ציטוט אמיתי מלקוח.]", r2: "[ציטוט אמיתי מלקוח.]", r_author: "[שם, תפקיד]",
+      hero_lead: "שומר מקצועי באזור המרכז ומאבטח טיולים — כדי שאתם והקבוצה שלכם תהיו רגועים.",
+      cta_contact: "צרו קשר", cta_services: "השירותים שלי", cta_call: "התקשרו",
+      about_title: "ביטחון, אחריות ועין פקוחה",
+      about_p1: "[כמה שנים אני בתחום ואיפה עבדתי.]",
+      about_p2: "[מה חשוב לי בעבודה: לדוגמה — זמינות, דייקנות, היכרות עם השטח.]",
+      area_v: "מרכז", area_l: "אזור פעילות + טיולים בכל הארץ", stat_langs: "שפות: עברית, רוסית, אנגלית",
+      services_title: "במה אני יכול לעזור",
+      s1_t: "שמירה במרכז הארץ", s1_d: "שמירה ואבטחה על אתרים ומבנים באזור המרכז.",
+      s2_t: "אבטחת טיולים", s2_d: "ליווי ואבטחה של קבוצות וטיולים בדרך ובשטח.",
+      s3_t: "[שירות נוסף? לדוגמה — אבטחת אירועים]", s3_d: "[תיאור קצר, או למחוק.]",
+      exp_title: "הסמכות וניסיון",
+      e1_t: "[תפקיד · חברת אבטחה]", e1_d: "[מה כולל התפקיד.]",
+      e2_t: "[הסמכות: רישיון נשק / קורס מאבטחים / עזרה ראשונה]", e2_d: "[פרטים.]",
       contact_title: "בואו נדבר",
-      contact_lead: "[משפט הזמנה: לדוגמה — שיחת היכרות ראשונה ללא עלות.]"
+      contact_lead: "זמין בטלפון, בוואטסאפ ובמייל."
     },
     ru: {
-      nav_about: "Обо мне", nav_services: "Услуги", nav_experience: "Опыт", nav_contact: "Контакты",
-      hero_role: "[Область экспертизы]",
+      nav_about: "Обо мне", nav_services: "Услуги", nav_experience: "Квалификация", nav_contact: "Контакты",
+      hero_role: "Охрана и безопасность · центр страны и поездки",
       hero_title: "Деннис Кигельман",
-      hero_lead: "[Одно предложение: кому и с чем я помогаю. Например — помогаю малому бизнесу решить X и получить Y.]",
-      cta_contact: "Записаться на консультацию", cta_services: "Мои услуги", cta_call: "Позвонить",
-      about_title: "[Короткий заголовок о моём подходе]",
-      about_p1: "[Абзац 1: кто я, опыт и специализация.]",
-      about_p2: "[Абзац 2: как я работаю и чем отличаюсь.]",
-      stat_years: "лет опыта", stat_clients: "клиентов", stat_projects: "проектов", stat_langs: "рабочих языка",
-      services_title: "[Чем я могу помочь]",
-      s1_t: "[Услуга 1]", s1_d: "[Кратко: что входит и какой результат получает клиент.]",
-      s2_t: "[Услуга 2]", s2_d: "[Кратко: что входит и какой результат получает клиент.]",
-      s3_t: "[Услуга 3]", s3_d: "[Кратко: что входит и какой результат получает клиент.]",
-      exp_title: "[Профессиональный путь]",
-      e1_t: "[Должность · Компания]", e1_d: "[Главные достижения.]",
-      e2_t: "[Должность · Компания]", e2_d: "[Главные достижения.]",
-      e3_t: "[Образование · Учебное заведение]", e3_d: "[Степень / сертификат.]",
-      rev_eyebrow: "Отзывы", rev_title: "Что говорят клиенты",
-      r1: "[Реальная цитата клиента.]", r2: "[Реальная цитата клиента.]", r_author: "[Имя, должность]",
+      hero_lead: "Профессиональный охранник в центре Израиля и сопровождение поездок — чтобы вы и ваша группа были спокойны.",
+      cta_contact: "Связаться", cta_services: "Мои услуги", cta_call: "Позвонить",
+      about_title: "Надёжность, ответственность и внимание",
+      about_p1: "[Сколько лет в профессии и где работал.]",
+      about_p2: "[Что для меня важно в работе: например — доступность, пунктуальность, знание местности.]",
+      area_v: "Центр", area_l: "район работы + поездки по всей стране", stat_langs: "языка: иврит, русский, английский",
+      services_title: "Чем я могу помочь",
+      s1_t: "Охрана в центре страны", s1_d: "Охрана объектов и зданий в центральном районе.",
+      s2_t: "Охрана поездок", s2_d: "Сопровождение и охрана групп и экскурсий в пути и на месте.",
+      s3_t: "[Ещё услуга? Например — охрана мероприятий]", s3_d: "[Краткое описание или удалить.]",
+      exp_title: "Квалификация и опыт",
+      e1_t: "[Должность · Охранная компания]", e1_d: "[Что входит в работу.]",
+      e2_t: "[Допуски: лицензия на оружие / курс охранника / первая помощь]", e2_d: "[Подробности.]",
       contact_title: "Давайте поговорим",
-      contact_lead: "[Приглашение: например — первая ознакомительная консультация бесплатно.]"
+      contact_lead: "На связи по телефону, в WhatsApp и по email."
     },
     en: {
-      nav_about: "About", nav_services: "Services", nav_experience: "Experience", nav_contact: "Contact",
-      hero_role: "[Area of expertise]",
+      nav_about: "About", nav_services: "Services", nav_experience: "Qualifications", nav_contact: "Contact",
+      hero_role: "Security · Central Israel & trips",
       hero_title: "Dennis Kigelman",
-      hero_lead: "[One sentence: who I help and with what. E.g. — I help small businesses solve X and achieve Y.]",
-      cta_contact: "Book a consultation", cta_services: "My services", cta_call: "Call",
-      about_title: "[Short headline about my approach]",
-      about_p1: "[Paragraph 1: who I am, experience and specialization.]",
-      about_p2: "[Paragraph 2: how I work and what sets me apart.]",
-      stat_years: "years of experience", stat_clients: "clients", stat_projects: "projects", stat_langs: "working languages",
-      services_title: "[How I can help]",
-      s1_t: "[Service 1]", s1_d: "[Briefly: what's included and the client's result.]",
-      s2_t: "[Service 2]", s2_d: "[Briefly: what's included and the client's result.]",
-      s3_t: "[Service 3]", s3_d: "[Briefly: what's included and the client's result.]",
-      exp_title: "[Career path]",
-      e1_t: "[Role · Company]", e1_d: "[Key achievements.]",
-      e2_t: "[Role · Company]", e2_d: "[Key achievements.]",
-      e3_t: "[Education · Institution]", e3_d: "[Degree / certification.]",
-      rev_eyebrow: "Testimonials", rev_title: "What clients say",
-      r1: "[A real client quote.]", r2: "[A real client quote.]", r_author: "[Name, role]",
+      hero_lead: "Professional security guard in Central Israel and trip security — so you and your group can feel safe.",
+      cta_contact: "Get in touch", cta_services: "My services", cta_call: "Call",
+      about_title: "Reliable, responsible, alert",
+      about_p1: "[How many years in the field and where I've worked.]",
+      about_p2: "[What matters to me: e.g. availability, punctuality, knowing the area.]",
+      area_v: "Center", area_l: "service area + trips nationwide", stat_langs: "languages: Hebrew, Russian, English",
+      services_title: "How I can help",
+      s1_t: "Security in Central Israel", s1_d: "Guarding sites and buildings in the central region.",
+      s2_t: "Trip security", s2_d: "Escort and security for groups and trips, on the road and on site.",
+      s3_t: "[Another service? E.g. event security]", s3_d: "[Short description, or remove.]",
+      exp_title: "Qualifications & experience",
+      e1_t: "[Role · Security company]", e1_d: "[What the role involves.]",
+      e2_t: "[Licenses: firearm license / guard course / first aid]", e2_d: "[Details.]",
       contact_title: "Let's talk",
-      contact_lead: "[Invitation: e.g. — the first intro call is free.]"
+      contact_lead: "Available by phone, WhatsApp and email."
     }
   };
 
